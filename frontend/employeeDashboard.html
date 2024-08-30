@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Your Information</title>
+  <link rel="stylesheet" type="text/css" href="styles5.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <h1>Welcome, <span id="employee_username">[Employee Username]</span>!</h1>
+
+  <div>
+    <h2>Edit Your Information</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Your Username">
+
+    <label for="currentPassword">Current Password:</label>
+    <input type="password" id="currentPassword" placeholder="Current Password">
+
+    <label for="newPassword">New Password:</label>
+    <input type="password" id="newPassword" placeholder="New Password">
+
+    <button onclick="editEmployeeInfo()">Edit Information</button>
+    <br>
+    <br>
+    <br>
+    <label for="session">Pick Your Availability for session:</label>
+    <select id="session">
+      <option value="session1">session1</option>
+      <option value="session2">session2</option>
+      <option value="session3">session3</option>
+    </select>
+
+    <button onclick="updatedSessionInfo(event)">Save session</button>
+  </div>
+</body>
+
+</html>

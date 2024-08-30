@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Member Dashboard</title>
+    <link rel="stylesheet" href="styles5.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Welcome, <span id="member_name">[Member Name]</span>!</h1>
+
+    <div class="container">
+        <form id="editInfoForm">
+            <h2>Edit Your Information</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Your Username">
+
+            <label for="currentPassword">Current Password:</label>
+            <input type="password" id="currentPassword" placeholder="Current Password">
+
+            <label for="newPassword">New Password:</label>
+            <input type="password" id="newPassword" placeholder="New Password">
+
+            <button type="submit" id="saveInfoButton">Save Information</button>
+        </form>
+
+        <form id="selectSessionForm">
+            <div class="session-selection">
+                <h2>Select Session</h2>
+                <label for="session">Choose a session:</label>
+                <select id="session">
+                    <option value="session1">Session 1</option>
+                    <option value="session2">Session 2</option>
+                    <option value="session3">Session 3</option>
+                </select>
+                <button type="submit" id="selectSessionButton">Select Session</button>
+            </div>
+            <form id="updatePlanForm">
+                <h2>Update Your Plan</h2>
+                <label for="newPlan">Select new plan:</label>
+                <select id="newPlan">
+                    <option value="basic">Basic Plan</option>
+                    <option value="standard">Standard Plan</option>
+                    <option value="premium">Premium Plan</option>
+                    <option value="gold">Gold Plan</option>
+                    <option value="platinum">Platinum Plan</option>
+                    <option value="ultimate">Ultimate Plan</option>
+                    <label for="payment-option">Choose Payment Option:</label>
+                    <input type="radio" id="paymentCardRadio" name="payment-option" value="card">
+                    <label for="paymentCardRadio">Credit Card</label>
+                    <input type="radio" id="paymentCashRadio" name="payment-option" value="cash">
+                    <label for="paymentCashRadio">Cash</label><br>
+                </select>
+                <button type="button" onclick="updatePlan()">Update Plan</button>
+            </form>
+
+            <form id="displayCurrentPlanForm">
+                <h2>Display Current Plan</h2>
+                <button type="button" onclick="displayCurrentPlan()">Display Current Plan</button>
+            </form>
+
+            <form id="cancelMembershipForm">
+                <h2>Cancel Membership</h2>
+                <button type="button" onclick="cancelMembership()">Cancel Membership</button>
+            </form>
+
+            <form id="attendance_form">
+                <h2>Mark Attendance</h2>
+                <button type="button" onclick="markAttendance()">Mark Attendance</button>
+            </form>
+    </div>
+</body>
+
+</html>

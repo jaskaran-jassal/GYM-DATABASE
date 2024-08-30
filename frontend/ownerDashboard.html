@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Owner Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="styles5.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Welcome, <span id="owner_username">[Owner Username]</span>!</h1>
+
+    <h2>Edit User Settings</h2>
+    <form id="edit_user_settings_form">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="edit_username" required><br><br>
+        <label for="current_password">Current Password:</label>
+        <input type="password" name="current_password" id="current_password" required><br><br>
+        <label for="new_password">New Password:</label>
+        <input type="password" name="new_password" id="new_password" required><br><br>
+        <input type="submit" value="Update User Settings">
+    </form>
+
+    <h2>Add Trainer</h2>
+    <form id="add_trainer_form">
+        <label for="trainer_username">Trainer Username:</label>
+        <input type="text" name="trainer_username" id="trainer_username" required><br><br>
+        <label for="trainer_password">Trainer Password:</label>
+        <input type="password" name="trainer_password" id="trainer_password" required><br><br>
+        <input type="submit" value="Add Trainer">
+    </form>
+
+    <h2>Remove Trainer</h2>
+    <form id="remove_trainer_form" >
+        <label for="remove_trainer_username">Trainer Username:</label>
+        <input type="text" name="remove_trainer_username" id="remove_trainer_username" required><br><br>
+        <input type="submit" value="Remove Trainer">
+    </form>
+
+    <hr>
+
+    <h2>Equipment Maintenance</h2>
+    <form id="equipment_maintenance_form">
+        <label for="equipment">Select Equipment:</label>
+        <select name="equipment" id="equipment" required>
+            <option value="" disabled selected>Select Equipment</option>
+            <option value="Treadmill ">Treadmill </option>
+            <option value="Stationary Bike ">Stationary Bike </option>
+            <option value="Weight Bench ">Weight Bench </option>
+            <option value="Elliptical Machine ">Elliptical Machine </option>
+            <option value="Rowing Machine ">Rowing Machine </option>
+            <option value="Dumbbell Set ">Dumbbell Set </option>
+            <option value="Yoga Mat ">Yoga Mat </option>
+            <option value="Smith Machine ">Smith Machine </option>
+            <option value="Cable Machine ">Cable Machine </option>
+            <option value="Pull-up Bar 1">Pull-up Bar </option>
+        </select><br><br>
+
+        <label for="equipmentId">Enter Equipment ID:</label>
+    <input type="number" name="equipmentId" id="equipmentId" required><br><br>
+
+    <input type="submit" value="Submit Maintenance">
+</form>
+
+</body>
+
+</html>
